@@ -20,7 +20,7 @@ import ida_loader
 
 # Allow the user to override the download URL
 if "URL" not in locals():
-    URL = "https://github.com/IDArlingTeam/IDArling/archive/master.zip"
+    URL = "https://github.com/Georgiy0/IDArling/archive/master.zip"
 
 print("[*] Installing IDArling...")
 # Install into the user directory on all platforms
