@@ -11,7 +11,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 import colorsys
-from functools import partial, lru_cache
+from functools import partial
 import time
 
 from PyQt5.QtCore import QPoint, QRect, QSize, Qt, QTimer
@@ -44,7 +44,6 @@ class StatusWidget(QWidget):
         return 0xFF000000 | r | g | b
 
     @staticmethod
-    @lru_cache(maxsize=32)
     def make_icon(template, color):
         """
         Create an icon for the specified user color. It will be used to
